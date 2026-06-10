@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pramukh & Vishnu Priya — Wedding Invitation</title>
+    <meta name="description" content="You are cordially invited to celebrate the wedding of Pramukh & Vishnu Priya" />
+
+    <!-- Prevent auto-translation -->
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Language" content="en" />
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Pramukh & Vishnu Priya — Wedding Invitation" />
+    <meta property="og:description" content="You are cordially invited to celebrate the wedding of Pramukh & Vishnu Priya on 3rd May 2026" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pramukh & Vishnu Priya Wedding" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Pramukh & Vishnu Priya — Wedding Invitation" />
+    <meta name="twitter:description" content="You are cordially invited to celebrate the wedding of Pramukh & Vishnu Priya on 3rd May 2026" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="assets/index-Coi12KD2.js" defer></script>
+    <link rel="stylesheet" crossorigin href="assets/index-C-9LA9aH.css">
+    <style>
+      /* 🎵 Music Button */
+      .music-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        background: rgba(0,0,0,0.5);
+        border: 1px solid rgba(212,175,55,0.4);
+        color: #fff;
+        font-size: 18px;
+        padding: 12px;
+        border-radius: 50%;
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .music-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(212,175,55,0.4);
+      }
+
+
+
+
+      /* ✨ Enhanced Animations */
+      .hidden {
+        opacity: 0;
+        transform: translateY(60px) scale(0.95);
+      }
+
+      .show {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        transition: all 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      /* 🚀 Performance Optimizations */
+      .invitation-content {
+        will-change: opacity, transform;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+      }
+
+      .event-card, .story-card, .time-box {
+        will-change: transform;
+        transform: translateZ(0);
+      }
+
+      /* 📅 Event Cards Styles */
+      .events-intro {
+        text-align:center;
+        color:#aaa;
+        font-family:'Cormorant Garamond',serif;
+        font-style:italic;
+        margin-bottom:2.5rem;
+      }
+      .event-card {
+        background: rgba(15,15,15,0.88);
+        border: 1px solid rgba(179,139,45,0.4);
+        border-radius: 20px;
+        margin-bottom: 1.2rem;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .event-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+      }
+      .event-header {
+        padding: 1.4rem 1.8rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+      }
+      .event-header::before {
+        content:'';
+        position:absolute;left:0;top:0;bottom:0;width:3px;
+        background: linear-gradient(180deg, #b38b2d, #c43a3a);
+        border-radius:3px 0 0 3px;
+      }
+      .event-icon { font-size: 1.8rem; flex-shrink:0; }
+      .event-info { flex:1; }
+      .event-name {
+        font-family: 'Cinzel', serif;
+        font-size: clamp(1.5rem, 3.75vw, 1.725rem);
+        color: #f5f0e6;
+        letter-spacing: 0.1em;
+      }
+      .event-datetime {
+        font-size: 1.23rem;
+        color: #aaa;
+        margin-top: 0.15rem;
+        letter-spacing:0.05em;
+      }
+      .event-body {
+        padding: 0 1.8rem 1.5rem;
+      }
+      .event-desc {
+        color:#d1cca8;
+        font-size:1.35rem;
+        line-height:1.8;
+        margin-bottom:1rem;
+        padding-top:0.5rem;
+        border-top:1px solid rgba(179,139,45,0.2);
+      }
+      .event-venue {
+        display:flex; align-items:flex-start; gap:0.5rem;
+        font-size:1.275rem; color:#aaa;
+        margin-bottom:1rem;
+      }
+      .map-btn {
+        display:inline-flex; align-items:center; gap:0.4rem;
+        background: linear-gradient(135deg, #b38b2d, #d4af53);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        padding: 0.55rem 1.2rem;
+        font-size: 0.8rem;
+        letter-spacing:0.1em;
+        cursor:pointer;
+        text-decoration:none;
+        font-family:'Cinzel',serif;
+        font-weight:500;
+        transition:opacity 0.2s, transform 0.2s;
+      }
+      .map-btn:hover { opacity:0.85; transform:translateY(-1px); }
+
+      /* ⏳ COUNTDOWN PREMIUM */
+      .countdown-section {
+        margin: 4rem 1.5rem;
+        text-align: center;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .countdown-section .section-title {
+        font-family: 'Cinzel', serif;
+        font-size: clamp(1.1rem, 3vw, 1.4rem);
+        color: #d4af37;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+      }
+
+      .countdown-section .section-sub {
+        color: rgba(255,255,255,0.7);
+        font-size: 0.9rem;
+        letter-spacing: 0.1em;
+        margin-bottom: 2.5rem;
+        font-family: 'Cormorant Garamond', serif;
+        font-style: italic;
+      }
+
+      .countdown-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .time-box {
+        background: rgba(30,30,30,0.92);
+        border: 1px solid rgba(212,175,55,0.25);
+        border-radius: 16px;
+        padding: 1.5rem 0.5rem;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(212,175,55,0.15);
+        position: relative;
+        overflow: hidden;
+        transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        transform: translateY(20px);
+        opacity: 0;
+      }
+
+      .time-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #d4af37, transparent);
+      }
+
+      .time-box:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba(212,175,55,0.25);
+      }
+
+      .time-box span {
+        font-family: 'Cinzel', serif;
+        font-size: clamp(1.1rem, 3.4vw, 1.7rem);
+        color: #d4af37;
+        line-height: 1;
+        font-weight: 500;
+        display: block;
+      }
+
+      .time-box p {
+        font-size: 0.7rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.6);
+        margin-top: 0.4rem;
+      }
+
+      .time-box.show {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .time-box:nth-child(1).show { transition-delay: 0.1s; }
+      .time-box:nth-child(2).show { transition-delay: 0.2s; }
+      .time-box:nth-child(3).show { transition-delay: 0.3s; }
+      .time-box:nth-child(4).show { transition-delay: 0.4s; }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: none;
+      }
+
+      .diamond-divider {
+        color: #d4af37;
+        font-size: 1.2rem;
+        letter-spacing: 0.5rem;
+        margin: 1.5rem 0;
+        text-align: center;
+      }
+
+      .section {
+        padding: 4rem 1.5rem;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        font-family: 'Cinzel', serif;
+        font-size: clamp(1.1rem, 3vw, 1.4rem);
+        color: #d4af37;
+        letter-spacing: 0.25em;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+      }
+
+      .section-sub {
+        text-align: center;
+        color: rgba(255,255,255,0.7);
+        font-size: 0.9rem;
+        letter-spacing: 0.1em;
+        margin-bottom: 2.5rem;
+        font-family: 'Cormorant Garamond', serif;
+        font-style: italic;
+      }
+
+      .story-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .story-card {
+        background: rgba(20,20,20,0.92);
+        border: 1px solid rgba(212,175,55,0.25);
+        border-radius: 20px;
+        padding: 2rem;
+        position: relative;
+        box-shadow: 0 4px 20px rgba(212,175,55,0.15);
+        transition: transform 0.3s;
+      }
+
+      .story-card:hover {
+        transform: translateY(-3px);
+      }
+
+      .story-year {
+        font-family: 'Cinzel', serif;
+        font-size: 1.8rem;
+        color: #d4af37;
+        opacity: 0.4;
+        position: absolute;
+        top: 1.2rem;
+        right: 1.5rem;
+        font-weight: 500;
+      }
+
+      .story-icon {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .story-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.4rem;
+        color: #d4af37;
+        margin-bottom: 0.5rem;
+        font-style: italic;
+      }
+
+      .story-text {
+        color: rgba(255,255,255,0.8);
+        font-size: 1.225rem;
+        line-height: 1.8;
+      }
+
+      @media (min-width: 600px) {
+        .story-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .countdown-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .event-card, .story-card {
+          will-change: auto;
+        }
+      }
+
+      /* 💕 Couple Photo Styling */
+      .couple-photo {
+        margin: 2rem auto;
+        text-align: center;
+        position: relative;
+        will-change: transform;
+      }
+
+      .couple-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid rgba(212,175,55,0.3);
+        box-shadow:
+          0 8px 32px rgba(212,175,55,0.25),
+          inset 0 0 0 2px rgba(255,255,255,0.1);
+        transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        position: relative;
+        z-index: 2;
+        min-height: 150px;
+        background: rgba(212,175,55,0.1);
+      }
+
+      .couple-photo::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background: conic-gradient(from 0deg,
+          rgba(212,175,55,0.3),
+          rgba(179,139,45,0.5),
+          rgba(212,175,55,0.3));
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.6s ease;
+      }
+
+      .couple-photo:hover::before {
+        opacity: 1;
+      }
+
+      .couple-photo:hover .couple-img {
+        transform: scale(1.05);
+        box-shadow:
+          0 12px 48px rgba(212,175,55,0.35),
+          inset 0 0 0 2px rgba(255,255,255,0.2);
+      }
+
+      .couple-photo::after {
+        content: '◆ ◇ ◆';
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #d4af37;
+        font-size: 0.7rem;
+        letter-spacing: 0.8rem;
+        opacity: 0.6;
+      }
+
+      @media (max-width: 600px) {
+        .couple-img {
+          width: 120px;
+          height: 120px;
+        }
+
+        .couple-photo::before {
+          width: 140px;
+          height: 140px;
+        }
+      }
+
+      /* 💌 Envelope Text Color Matching */
+      .seal-hint {
+        color: #ffd700 !important;
+        text-shadow:
+          0 0 10px rgba(255, 215, 0, 0.8),
+          0 2px 4px rgba(0, 0, 0, 0.7) !important;
+        font-weight: 600 !important;
+        font-size: 1.1rem !important;
+        background: rgba(0, 0, 0, 0.3) !important;
+        padding: 8px 12px !important;
+        border-radius: 8px !important;
+        backdrop-filter: blur(5px) !important;
+      }
+
+      /* 📱 MOBILE RESPONSIVE FIXES FOR ENVELOPE & SEAL */
+      @media (max-width: 768px) {
+        .envelope-wrapper {
+          padding: 1rem;
+        }
+
+        .envelope-overlay-text {
+          bottom: 8%;
+          width: 95%;
+        }
+
+        .envelope-overlay-text h1 {
+          font-size: clamp(1.2rem, 5vw, 1.8rem) !important;
+          line-height: 1.3;
+        }
+
+        .wax-seal {
+          width: clamp(160px, 32vw, 220px) !important;
+          height: clamp(160px, 32vw, 220px) !important;
+          top: 42% !important;
+        }
+
+        .seal-hint {
+          bottom: -28px !important;
+          font-size: 0.85rem !important;
+        }
+
+        .particles span {
+          width: 2px;
+          height: 2px;
+        }
+
+        .event-header {
+          padding: 1.2rem 1.5rem;
+          gap: 0.8rem;
+        }
+
+        .event-name {
+          font-size: clamp(1.3rem, 4vw, 1.5rem);
+        }
+
+        .event-datetime {
+          font-size: 1.1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .envelope-overlay-text {
+          bottom: 6%;
+          width: 98%;
+        }
+
+        .envelope-overlay-text h1 {
+          font-size: clamp(1rem, 6vw, 1.5rem) !important;
+          padding: 0 0.5rem;
+        }
+
+        .wax-seal {
+          width: clamp(130px, 36vw, 180px) !important;
+          height: clamp(130px, 36vw, 180px) !important;
+          top: 40% !important;
+        }
+
+        .seal-hint {
+          bottom: -25px !important;
+          font-size: 0.8rem !important;
+        }
+
+        .event-header {
+          padding: 1rem 1.2rem;
+          gap: 0.6rem;
+        }
+
+        .event-icon {
+          font-size: 1.5rem;
+        }
+
+        .event-name {
+          font-size: clamp(1.1rem, 4.5vw, 1.3rem);
+        }
+
+        .event-datetime {
+          font-size: 1rem;
+        }
+      }
+
+      /* 👇 Scroll Hint */
+      .scroll-hint {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 998;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.6s ease;
+        background: rgba(0, 0, 0, 0.85);
+        border: 1px solid rgba(212,175,55,0.6);
+        border-radius: 50px;
+        padding: 0.7rem 1.4rem 0.9rem;
+        box-shadow: 0 0 16px rgba(212,175,55,0.2);
+      }
+      .scroll-hint.visible {
+        opacity: 1;
+      }
+      .scroll-hint span {
+        font-family: 'Cinzel', serif;
+        font-size: 0.75rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #d4af37;
+      }
+      .scroll-hint .arrow {
+        width: 13px;
+        height: 13px;
+        border-right: 2.5px solid #d4af37;
+        border-bottom: 2.5px solid #d4af37;
+        transform: rotate(45deg);
+        box-shadow: 2px 2px 8px rgba(212,175,55,0.7);
+        animation: bounce-arrow 1.4s ease-in-out infinite;
+      }
+      @keyframes bounce-arrow {
+        0%, 100% { transform: rotate(45deg) translateY(0); opacity: 1; }
+        50%       { transform: rotate(45deg) translateY(6px); opacity: 0.35; }
+      }
+
+    </style>
+  </head>
+  <body translate="no">
+    <!-- 🎵 Background Music -->
+    <audio id="bg-music" loop preload="none" translate="no">
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-toggle" class="music-btn" translate="no">🔊</button>
+
+    <!-- ═══════════ FULL-SCREEN ENVELOPE (edge-to-edge, no borders) ═══════════ -->
+    <div id="envelope-wrapper" class="envelope-wrapper">
+
+      <!-- Floating particles -->
+      <div class="particles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- Envelope fills entire screen -->
+      <div id="envelope" class="envelope">
+
+        <!-- Diagonal decorative flaps -->
+        <div class="flap flap-top"></div>
+        <div class="flap flap-left"></div>
+        <div class="flap flap-right"></div>
+        <div class="flap flap-bottom"></div>
+
+        <!-- Card peeking inside -->
+        <div class="inner-card-peek">
+          <div class="peek-pattern"></div>
+        </div>
+
+        <!-- Text written ON the envelope -->
+        <div class="envelope-overlay-text">
+          <h1>This invitation is exclusively for you</h1>
+        </div>
+
+        <!-- Custom 3D Wax Seal with Logo -->
+        <div id="wax-seal" class="wax-seal" role="button" tabindex="0" aria-label="Open invitation">
+          <img src="wax_stamp.webp" alt="Wax Seal" class="seal-base-img" fetchpriority="high">
+          <img src="seal_logo.webp" alt="Logo" class="seal-logo-img">
+          <!-- Extra CSS shine -->
+          <div class="seal-shine"></div>
+          <!-- Tap hint -->
+          <div class="seal-hint">
+            <span>tap to open</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════ WAVE ANIMATED BACKGROUND (REACT MOUNT) ═══════════ -->
+    <div id="react-wave-root" style="position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:0;transition:opacity 2.5s ease 0.5s;"></div>
+
+    <!-- ═══════════ INVITATION CONTENT ═══════════ -->
+    <div id="invitation-content" class="invitation-content">
+
+      <div class="ornamental-border top-border" aria-hidden="true">
+        <div class="corner tl"></div>
+        <div class="border-line horizontal"></div>
+        <div class="corner tr"></div>
+      </div>
+
+      <header class="invite-header">
+        <div class="ganesh-symbol" aria-label="Lord Ganesha symbol">
+          <img src="ganesh.webp" alt="Lord Ganesha" class="ganesh-img" fetchpriority="high">
+        </div>
+        <p class="shubh">|| श्री गणेशाय नमः ||</p>
+        <div class="divider"><span></span><span class="diamond">◆</span><span></span></div>
+        <h2>Together with their families</h2>
+        <h1 class="couple-names">Pramukh <span class="amp">&</span> Vishnu Priya</h1>
+
+        <p class="invite-line">Request the honour of your presence at their wedding celebration</p>
+      </header>
+
+      <!-- ═══════════ COUNTDOWN SECTION ═══════════ -->
+      <section class="countdown-section text-center">
+        <h2 class="section-title">Counting Down to the Big Day</h2>
+        <p class="section-sub">3rd May 2026 · Shubh Vivah</p>
+
+        <div id="countdown" class="countdown-container">
+          <div class="time-box">
+            <span id="days">00</span>
+            <p>Days</p>
+          </div>
+          <div class="time-box">
+            <span id="hours">00</span>
+            <p>Hours</p>
+          </div>
+          <div class="time-box">
+            <span id="minutes">00</span>
+            <p>Minutes</p>
+          </div>
+          <div class="time-box">
+            <span id="seconds">00</span>
+            <p>Seconds</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="diamond-divider reveal">◆</div>
+
+      <!-- Our Love Story -->
+      <section class="section reveal">
+        <div class="section-title">Our Love Story</div>
+        <div class="section-sub">A journey written in the stars</div>
+        <div class="story-grid">
+          <div class="story-card">
+            <div class="story-year">2020</div>
+            <div class="story-icon">✨</div>
+            <div class="story-title">Where It All Began</div>
+            <div class="story-text">In the stillness of a locked-down world, the universe conspired — and Vishnu Priya & Pramukh found each other.</div>
+          </div>
+          <div class="story-card">
+            <div class="story-year">2020</div>
+            <div class="story-icon">💬</div>
+            <div class="story-title">The First Hello</div>
+            <div class="story-text">One conversation led to another. Before long, two hearts had quietly, surely found their home in each other.</div>
+          </div>
+          <div class="story-card">
+            <div class="story-year">5 Yrs</div>
+            <div class="story-icon">💑</div>
+            <div class="story-title">Five Beautiful Years</div>
+            <div class="story-text">Five years of choosing each other — through every storm, every season, every ordinary moment made beautiful simply by being together.</div>
+          </div>
+          <div class="story-card">
+            <div class="story-year">2026</div>
+            <div class="story-icon">💍</div>
+            <div class="story-title">Forever Begins</div>
+            <div class="story-text">With family's blessings and love as their compass, Vishnu Priya & Pramukh begin forever — and they'd love for you to witness it all.</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="diamond-divider reveal">◆</div>
+
+      <!-- Events -->
+      <section class="section">
+        <div class="section-title reveal">Wedding Events</div>
+        <div class="events-intro reveal">Join us across eight beautiful celebrations</div>
+
+        <!-- Haldi -->
+        <div class="event-card reveal">
+          <div class="event-header">
+            <div class="event-icon">💛</div>
+            <div class="event-info">
+              <div class="event-name">Haldi</div>
+              <div class="event-datetime">Friday, 1st May 2026 · 10:00 AM onwards</div>
+            </div>
+          </div>
+          <div class="event-body">
+            <div class="event-desc">A bright and joyful ritual of turmeric blessings, laughter, and colours under the open sky — welcoming the celebrations with warmth and tradition.</div>
+            <div class="event-venue">📍 <span>Agrasen Bhawan, Bilha</span></div>
+            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Agrasen+Bhawan+Bilha+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
+          </div>
+        </div>
+
+        <!-- Mehendi -->
+        <div class="event-card reveal">
+          <div class="event-header">
+            <div class="event-icon">🌿</div>
+            <div class="event-info">
+              <div class="event-name">Mehendi</div>
+              <div class="event-datetime">Friday, 1st May 2026 · 3:00 PM onwards</div>
+            </div>
+          </div>
+          <div class="event-body">
+            <div class="event-desc">An afternoon of intricate henna artistry, fragrant florals, folk music, and the beautiful colours of celebration that set the festivities in motion.</div>
+            <div class="event-venue">📍 <span>Agrasen Bhawan, Bilha</span></div>
+            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Agrasen+Bhawan+Bilha+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
+          </div>
+        </div>
+
+        <!-- Bandori -->
+        <div class="event-card reveal">
+          <div class="event-header">
+            <div class="event-icon">🎶</div>
+            <div class="event-info">
+              <div class="event-name">Bandori</div>
+              <div class="event-datetime">Friday, 1st May 2026 · 6:00 PM onwards</div>
+            </div>
+          </div>
+          <div class="event-body">
+            <div class="event-desc">An intimate and heartfelt evening at home with family, filled with songs, blessings, and the warmth of loved ones as celebrations begin from the heart.</div>
+            <div class="event-venue">📍 <span>Our Resident, Bilha</span></div>
+            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Shitla+Mandir+Near+old+gung+para+Bundela+Chhattisgarh+495224" target="_blank">🗺️ <span>Get Directions</span></a>
+          </div>
+        </div>
+
+        <!-- Cocktail Night -->
+        <div class="event-card reveal">
+          <div class="event-header">
+            <div class="event-icon">🥂</div>
+            <div class="event-info">
+              <div class="event-name">Cocktail Night</div>
+              <div class="event-datetime">Saturday, 2nd May 2026 · 7:00 PM onwards</div>
+            </div>
+          </div>
+          <div class="event-body">
+            <div class="event-desc">A glamorous evening of cocktails, music, and celebrations — the perfect way to set the mood for the wedding festivities with family and friends under the stars.</div>
+            <div class="event-venue">📍 <span>Chawla Greens, seepat road, near RTO, Bilaspur</span></div>
+            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Chawla+Greens+seepat+road+near+RTO+Bilaspur+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
+          </div>
+        </div>
+
+        <!-- Mayra -->
+        <div class="event-card reveal">
+          <div class="event-header">
+            <div class="event-icon">🎁</div>
+            <div class="event-info">
+              <div class="event-name">Mayra</div>
+              <div class="event-datetime">Sunday, 3rd May 2026 · 11:00 AM onwards</div>
+            </div>
+          </div>
+          <div class="event-body">
+            <div class="event-desc">A sacred and joyous ritual where the maternal family showers the bride with love, blessings, and gifts — a tradition close to every heart.</div>
+            <div class="event-venue">📍 <span>Chawla Greens, seepat road, near RTO, Bilaspur</span></div>
+            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Chawla+Greens+seepat+road+near+RTO+Bilaspur+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
+          </div>
+        </div>
+
+        <!-- Baraat -->
+        <div class="event-card reveal">
+          <div class="event-header">
+            <div class="event-icon">🐴</div>
+            <div class="event-info">
+              <div class="event-name">Baraat</div>
+              <div class="event-datetime">Sunday, 3rd May 2026 · 6:00 PM onwards</div>
+            </div>
+          </div>
+          <div class="event-body">
+            <div class="event-desc">The grand groom's procession — a dazzling celebration of dhol, dance, and unbridled joy as Pramukh arrives to claim his beloved Vishnu Priya.</div>
+            <div class="event-venue">📍 <span>Chawla Greens, seepat road, near RTO, Bilaspur</span></div>
+            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Chawla+Greens+seepat+road+near+RTO+Bilaspur+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
+          </div>
+        </div>
+
+        <!-- Reception -->
+        <div class="event-card reveal">
+          <div class="event-header">
+            <div class="event-icon">🌟</div>
+            <div class="event-info">
+              <div class="event-name">Reception</div>
+              <div class="event-datetime">Sunday, 3rd May 2026 · 8:00 PM onwards</div>
+            </div>
+          </div>
+          <div class="event-body">
+            <div class="event-desc">A grand evening of dinner, dance, and celebration — welcoming the newlyweds as they step into their beautiful new chapter together.</div>
+            <div class="event-venue">📍 <span>Chawla Greens, seepat road, near RTO, Bilaspur</span></div>
+            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Chawla+Greens+seepat+road+near+RTO+Bilaspur+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
+          </div>
+        </div>
+
+        <!-- Phera -->
+        <div class="event-card reveal">
+          <div class="event-header">
+            <div class="event-icon">🔥</div>
+            <div class="event-info">
+              <div class="event-name">Phera</div>
+              <div class="event-datetime">Sunday, 3rd May 2026 · Shubh Muhurat · 11:00 PM</div>
+            </div>
+          </div>
+          <div class="event-body">
+            <div class="event-desc">The most sacred moment — as Vishnu Priya and Pramukh take their seven holy vows around the sacred fire, uniting their souls in the eternal bond of marriage, witnessed by family, stars, and the divine.</div>
+            <div class="event-venue">📍 <span>Chawla Greens, seepat road, near RTO, Bilaspur</span></div>
+            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Chawla+Greens+seepat+road+near+RTO+Bilaspur+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="rsvp-section">
+        <div class="rsvp-inner">
+          <h3>RSVP</h3>
+          <p>Kindly confirm your gracious presence by 25th April</p>
+          <a href="https://wa.me/917008805825?text=Namaste!%20I%20would%20like%20to%20confirm%20my%20RSVP%20for%20Vishnu%20Priya%20%26%20Pramukh%27s%20wedding.%20%F0%9F%92%8D%0AMy%20Name%3A%20%0AAttending%3A%20Yes%20%2F%20No%0ANumber%20of%20Guests%3A" class="rsvp-btn" target="_blank">Respond with Love</a>
+        </div>
+      </section>
+
+      <footer class="invite-footer">
+        <div class="divider"><span></span><span class="diamond">◆</span><span></span></div>
+        <p>We can't wait to celebrate with you!</p>
+        <p class="couple-footer">Pramukh & Vishnu Priya</p>
+      </footer>
+
+      <div class="ornamental-border bottom-border" aria-hidden="true">
+        <div class="corner bl"></div>
+        <div class="border-line horizontal"></div>
+        <div class="corner br"></div>
+      </div>
+    </div>
+
+    <!-- 👇 Scroll Hint -->
+    <div id="scroll-hint" class="scroll-hint">
+      <span>Scroll</span>
+      <div class="arrow"></div>
+    </div>
+
+    <!-- Scripts -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* 🎵 MUSIC CONTROL */
+  const music = document.getElementById("bg-music");
+  const musicBtn = document.getElementById("music-toggle");
+
+  let isPlaying = false;
+  let musicInitialized = false;
+
+  function initializeMusic() {
+    if (musicInitialized || !music) return;
+    try {
+      music.load();
+      musicInitialized = true;
+      console.log("Music initialized successfully");
+    } catch (error) {
+      console.log("Music initialization failed:", error);
+    }
+  }
+
+  function playMusic() {
+    if (!music) return;
+    const attemptPlay = () => {
+      music.play().then(() => {
+        isPlaying = true;
+        if (musicBtn) musicBtn.innerText = "🔊";
+        console.log("Music started successfully");
+      }).catch((error) => {
+        console.log("Music autoplay prevented:", error);
+        setTimeout(attemptPlay, 1000);
+      });
+    };
+    attemptPlay();
+  }
+
+  initializeMusic();
+
+  document.body.addEventListener("click", () => {
+    if (!isPlaying && music) {
+      setTimeout(() => {
+        playMusic();
+      }, 100);
+    }
+  }, { once: true });
+
+  setInterval(() => {
+    if (music && music.readyState === 0) {
+      initializeMusic();
+    }
+  }, 5000);
+
+  if (musicBtn) {
+    musicBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (!music) {
+        console.log("Music element not found");
+        return;
+      }
+      if (music.paused) {
+        playMusic();
+      } else {
+        music.pause();
+        musicBtn.innerText = "🔇";
+        isPlaying = false;
+      }
+    });
+  }
+
+
+  /* ⏳ COUNTDOWN (ENHANCED) */
+  const daysEl = document.getElementById("days");
+  const hoursEl = document.getElementById("hours");
+  const minutesEl = document.getElementById("minutes");
+  const secondsEl = document.getElementById("seconds");
+
+  const weddingDate = new Date("2026-05-03T11:30:00").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    if (distance <= 0) {
+      if (daysEl) daysEl.textContent = "00";
+      if (hoursEl) hoursEl.textContent = "00";
+      if (minutesEl) minutesEl.textContent = "00";
+      if (secondsEl) secondsEl.textContent = "00";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
+    if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
+    if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
+    if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+
+  /* 🪄 SCROLL ANIMATION */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        requestAnimationFrame(() => {
+          entry.target.classList.add("show");
+          if (entry.target.classList.contains('reveal')) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }
+    });
+  }, {
+    threshold: 0.05,
+    rootMargin: '0px 0px -30px 0px'
+  });
+
+  setTimeout(() => {
+    document.querySelectorAll(".time-box").forEach(el => {
+      observer.observe(el);
+    });
+    document.querySelectorAll(".reveal").forEach(el => {
+      observer.observe(el);
+    });
+  }, 100);
+
+  setTimeout(() => {
+    const countdownSection = document.querySelector(".countdown-section");
+    if (countdownSection) {
+      countdownSection.classList.add("show");
+    }
+    document.querySelectorAll(".time-box").forEach((box, index) => {
+      setTimeout(() => {
+        box.classList.add("show");
+      }, (index + 1) * 100);
+    });
+  }, 500);
+
+  /* 👇 SCROLL HINT */
+  const scrollHint = document.getElementById("scroll-hint");
+  setTimeout(() => {
+    if (scrollHint) scrollHint.classList.add("visible");
+  }, 1500);
+  window.addEventListener("scroll", () => {
+    if (scrollHint && window.scrollY > 80) scrollHint.classList.remove("visible");
+  }, { passive: true });
+
+});
+
+</script>
+</body>
+</html>
+
