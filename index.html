@@ -370,30 +370,30 @@
       }
 
       .couple-img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
+        width: min(440px, 88vw);
+        height: auto;
+        aspect-ratio: 3 / 2;
+        border-radius: 18px;
         object-fit: cover;
-        border: 4px solid rgba(212,175,55,0.3);
+        border: 4px solid rgba(212,175,55,0.35);
         box-shadow:
-          0 8px 32px rgba(212,175,55,0.25),
+          0 10px 40px rgba(212,175,55,0.25),
           inset 0 0 0 2px rgba(255,255,255,0.1);
         transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
         position: relative;
         z-index: 2;
-        min-height: 150px;
         background: rgba(212,175,55,0.1);
       }
 
       .couple-photo::before {
         content: '';
         position: absolute;
-        top: -10px;
+        top: -8px;
         left: 50%;
         transform: translateX(-50%);
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
+        width: calc(min(440px, 88vw) + 16px);
+        height: calc((min(440px, 88vw) * 0.6667) + 16px);
+        border-radius: 22px;
         background: conic-gradient(from 0deg,
           rgba(212,175,55,0.3),
           rgba(179,139,45,0.5),
@@ -428,13 +428,7 @@
 
       @media (max-width: 600px) {
         .couple-img {
-          width: 120px;
-          height: 120px;
-        }
-
-        .couple-photo::before {
-          width: 140px;
-          height: 140px;
+          width: 88vw;
         }
       }
 
@@ -623,7 +617,7 @@
         <!-- Custom 3D Wax Seal with Logo -->
         <div id="wax-seal" class="wax-seal" role="button" tabindex="0" aria-label="Open invitation">
           <img src="wax_stamp.webp" alt="Wax Seal" class="seal-base-img" fetchpriority="high">
-          <img src="seal_logo.webp" alt="Logo" class="seal-logo-img">
+          <img src="seal_logo_pv.png" alt="P & V Logo" class="seal-logo-img">
           <!-- Extra CSS shine -->
           <div class="seal-shine"></div>
           <!-- Tap hint -->
@@ -654,6 +648,11 @@
         <div class="divider"><span></span><span class="diamond">◆</span><span></span></div>
         <h2>Together with their families</h2>
         <h1 class="couple-names">Pramukh <span class="amp">&</span> Vishnu Priya</h1>
+
+        <!-- Couple Photo -->
+        <div class="couple-photo">
+          <img src="couple-photo.webp" alt="Pramukh & Vishnu Priya" class="couple-img" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.display='none';">
+        </div>
 
         <p class="invite-line">Request the honour of your presence at their wedding celebration</p>
       </header>
