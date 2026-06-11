@@ -534,6 +534,47 @@
         }
       }
 
+      /* 🎬 Opening hero — fit the intro to one screen */
+      #invitation-content { position: relative; padding-top: 0 !important; }
+      #invitation-content .ornamental-border.top-border {
+        position: absolute; top: 0; left: 0; right: 0; z-index: 1;
+      }
+      .invite-header {
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(0.3rem, 1.2vh, 0.9rem);
+        padding: clamp(2.4rem, 6vh, 4rem) 1.2rem clamp(5rem, 14vh, 8rem);
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .invite-header .ganesh-img {
+        height: clamp(44px, 7.2vh, 70px);
+        width: auto;
+      }
+      .invite-header .couple-names {
+        font-size: clamp(2.4rem, 7.6vh, 5.4rem);
+        line-height: 1.05;
+        margin: 0;
+      }
+      .invite-header .couple-photo {
+        margin: clamp(0.4rem, 1.2vh, 1rem) auto;
+      }
+      .invite-header .couple-img {
+        width: min(320px, 33vh, 84vw);
+      }
+      .invite-header .couple-photo::before {
+        width: calc(min(320px, 33vh, 84vw) + 16px);
+        height: calc((min(320px, 33vh, 84vw) * 0.6667) + 16px);
+      }
+
+      /* 👨‍👩‍👧 Families now sit just below the hero */
+      .families-section {
+        padding: 3rem 1.2rem 1rem;
+      }
+
       /* 🙏 Blessings line */
       .blessings {
         text-align: center;
@@ -552,7 +593,7 @@
         flex-direction: column;
         align-items: center;
         gap: 0.9rem;
-        margin: 2.2rem auto 0;
+        margin: 0 auto;
         max-width: 640px;
       }
       .family {
@@ -720,7 +761,9 @@
         </div>
 
         <p class="invite-line">Request the honour of your presence at their wedding celebration</p>
+      </header>
 
+      <section class="families-section">
         <div class="families">
           <div class="family">
             <span class="fam-rel">Chi. Ry. Pramukh .V <em>(B.E)</em></span>
@@ -732,7 +775,7 @@
             <span class="fam-parents">D/o Smt. Lakshmi &amp; Sri Kankipati Sunil Kumar<br>Madanapalle, A.P</span>
           </div>
         </div>
-      </header>
+      </section>
 
       <!-- ═══════════ COUNTDOWN SECTION ═══════════ -->
       <section class="countdown-section text-center">
