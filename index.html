@@ -546,9 +546,16 @@
         align-items: center;
         justify-content: center;
         gap: clamp(0.3rem, 1.2vh, 0.9rem);
-        padding: clamp(2.4rem, 6vh, 4rem) 1.2rem clamp(5rem, 14vh, 8rem);
+        padding: clamp(2.4rem, 6vh, 4rem) 1.2rem clamp(2rem, 4vh, 3rem);
         box-sizing: border-box;
         text-align: center;
+      }
+      /* Size the hero to its content (not a forced full screen) so the
+         next section follows right after — no big empty black band.
+         Content is ~one screen tall anyway, so the opening still fills it. */
+      .invite-header {
+        min-height: auto;
+        margin-bottom: clamp(0.5rem, 1.5vh, 1.25rem) !important;
       }
       .invite-header .ganesh-img {
         height: clamp(44px, 7.2vh, 70px);
@@ -572,7 +579,7 @@
 
       /* 👨‍👩‍👧 Families now sit just below the hero */
       .families-section {
-        padding: 3rem 1.2rem 1rem;
+        padding: 0.25rem 1.2rem 1rem;
       }
 
       /* 🙏 Blessings line */
