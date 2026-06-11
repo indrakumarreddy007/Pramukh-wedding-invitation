@@ -13,14 +13,14 @@
 
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Pramukh & Vishnu Priya — Wedding Invitation" />
-    <meta property="og:description" content="You are cordially invited to celebrate the wedding of Pramukh & Vishnu Priya on 3rd May 2026" />
+    <meta property="og:description" content="You are cordially invited to celebrate the wedding of Pramukh & Vishnu Priya on 5th July 2026" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Pramukh & Vishnu Priya Wedding" />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Pramukh & Vishnu Priya — Wedding Invitation" />
-    <meta name="twitter:description" content="You are cordially invited to celebrate the wedding of Pramukh & Vishnu Priya on 3rd May 2026" />
+    <meta name="twitter:description" content="You are cordially invited to celebrate the wedding of Pramukh & Vishnu Priya on 5th July 2026" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -532,6 +532,68 @@
         }
       }
 
+      /* 🙏 Blessings line */
+      .blessings {
+        text-align: center;
+        color: rgba(255,255,255,0.62);
+        font-family: 'Cormorant Garamond', serif;
+        font-style: italic;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0.6rem auto 0;
+        max-width: 520px;
+      }
+
+      /* 👨‍👩‍👧 Families block */
+      .families {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.9rem;
+        margin: 2.2rem auto 0;
+        max-width: 640px;
+      }
+      .family {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+      }
+      .fam-rel {
+        font-family: 'Cinzel', serif;
+        font-size: 1.15rem;
+        color: #f5f0e6;
+        letter-spacing: 0.04em;
+      }
+      .fam-rel em {
+        color: #d4af37;
+        font-style: normal;
+        font-size: 0.85rem;
+        letter-spacing: 0.08em;
+      }
+      .fam-parents {
+        font-family: 'Cormorant Garamond', serif;
+        font-style: italic;
+        font-size: 1rem;
+        color: rgba(255,255,255,0.7);
+        line-height: 1.5;
+      }
+      .fam-amp {
+        font-family: 'Great Vibes', cursive;
+        font-size: 2rem;
+        color: #d4af37;
+        line-height: 1;
+      }
+
+      /* 🎁 Gifts note */
+      .gifts-note {
+        margin-top: 1.4rem;
+        font-family: 'Cinzel', serif;
+        font-size: 0.85rem;
+        letter-spacing: 0.12em;
+        color: #d4af37;
+        opacity: 0.9;
+      }
+
       /* 👇 Scroll Hint */
       .scroll-hint {
         position: fixed;
@@ -644,7 +706,8 @@
         <div class="ganesh-symbol" aria-label="Lord Ganesha symbol">
           <img src="ganesh.webp" alt="Lord Ganesha" class="ganesh-img" fetchpriority="high">
         </div>
-        <p class="shubh">|| श्री गणेशाय नमः ||</p>
+        <p class="shubh">|| Sri Chenna Mallikarjuna Swamy Prasanna ||</p>
+        <p class="blessings">With the divine blessings of<br>Late Smt. Venkamma &amp; Late Sri N.V. Krishnaiah Setty</p>
         <div class="divider"><span></span><span class="diamond">◆</span><span></span></div>
         <h2>Together with their families</h2>
         <h1 class="couple-names">Pramukh <span class="amp">&</span> Vishnu Priya</h1>
@@ -655,12 +718,24 @@
         </div>
 
         <p class="invite-line">Request the honour of your presence at their wedding celebration</p>
+
+        <div class="families">
+          <div class="family">
+            <span class="fam-rel">Chi. Ry. Pramukh .V <em>(B.E)</em></span>
+            <span class="fam-parents">S/o Smt. Savitha &amp; Sri N.K. Vijayakumar<br>Srinivasa Build Mart, Pavagada</span>
+          </div>
+          <div class="fam-amp">weds</div>
+          <div class="family">
+            <span class="fam-rel">Chi. Sou. Dr. Vishnu Priya .K <em>(BPT)</em></span>
+            <span class="fam-parents">D/o Smt. Lakshmi &amp; Sri Kankipati Sunil Kumar<br>Madanapalle, A.P</span>
+          </div>
+        </div>
       </header>
 
       <!-- ═══════════ COUNTDOWN SECTION ═══════════ -->
       <section class="countdown-section text-center">
         <h2 class="section-title">Counting Down to the Big Day</h2>
-        <p class="section-sub">3rd May 2026 · Shubh Vivah</p>
+        <p class="section-sub">5th July 2026 · Muhurtham</p>
 
         <div id="countdown" class="countdown-container">
           <div class="time-box">
@@ -721,101 +796,21 @@
       <!-- Events -->
       <section class="section">
         <div class="section-title reveal">Wedding Events</div>
-        <div class="events-intro reveal">Join us across eight beautiful celebrations</div>
+        <div class="events-intro reveal">Join us across our wedding celebrations</div>
 
-        <!-- Haldi -->
+        <!-- Varapooja -->
         <div class="event-card reveal">
           <div class="event-header">
-            <div class="event-icon">💛</div>
+            <div class="event-icon">🪔</div>
             <div class="event-info">
-              <div class="event-name">Haldi</div>
-              <div class="event-datetime">Friday, 1st May 2026 · 10:00 AM onwards</div>
+              <div class="event-name">Varapooja</div>
+              <div class="event-datetime">Saturday, 4th July 2026 · 11:00 AM onwards</div>
             </div>
           </div>
           <div class="event-body">
-            <div class="event-desc">A bright and joyful ritual of turmeric blessings, laughter, and colours under the open sky — welcoming the celebrations with warmth and tradition.</div>
-            <div class="event-venue">📍 <span>Agrasen Bhawan, Bilha</span></div>
-            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Agrasen+Bhawan+Bilha+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
-          </div>
-        </div>
-
-        <!-- Mehendi -->
-        <div class="event-card reveal">
-          <div class="event-header">
-            <div class="event-icon">🌿</div>
-            <div class="event-info">
-              <div class="event-name">Mehendi</div>
-              <div class="event-datetime">Friday, 1st May 2026 · 3:00 PM onwards</div>
-            </div>
-          </div>
-          <div class="event-body">
-            <div class="event-desc">An afternoon of intricate henna artistry, fragrant florals, folk music, and the beautiful colours of celebration that set the festivities in motion.</div>
-            <div class="event-venue">📍 <span>Agrasen Bhawan, Bilha</span></div>
-            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Agrasen+Bhawan+Bilha+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
-          </div>
-        </div>
-
-        <!-- Bandori -->
-        <div class="event-card reveal">
-          <div class="event-header">
-            <div class="event-icon">🎶</div>
-            <div class="event-info">
-              <div class="event-name">Bandori</div>
-              <div class="event-datetime">Friday, 1st May 2026 · 6:00 PM onwards</div>
-            </div>
-          </div>
-          <div class="event-body">
-            <div class="event-desc">An intimate and heartfelt evening at home with family, filled with songs, blessings, and the warmth of loved ones as celebrations begin from the heart.</div>
-            <div class="event-venue">📍 <span>Our Resident, Bilha</span></div>
-            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Shitla+Mandir+Near+old+gung+para+Bundela+Chhattisgarh+495224" target="_blank">🗺️ <span>Get Directions</span></a>
-          </div>
-        </div>
-
-        <!-- Cocktail Night -->
-        <div class="event-card reveal">
-          <div class="event-header">
-            <div class="event-icon">🥂</div>
-            <div class="event-info">
-              <div class="event-name">Cocktail Night</div>
-              <div class="event-datetime">Saturday, 2nd May 2026 · 7:00 PM onwards</div>
-            </div>
-          </div>
-          <div class="event-body">
-            <div class="event-desc">A glamorous evening of cocktails, music, and celebrations — the perfect way to set the mood for the wedding festivities with family and friends under the stars.</div>
-            <div class="event-venue">📍 <span>Chawla Greens, seepat road, near RTO, Bilaspur</span></div>
-            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Chawla+Greens+seepat+road+near+RTO+Bilaspur+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
-          </div>
-        </div>
-
-        <!-- Mayra -->
-        <div class="event-card reveal">
-          <div class="event-header">
-            <div class="event-icon">🎁</div>
-            <div class="event-info">
-              <div class="event-name">Mayra</div>
-              <div class="event-datetime">Sunday, 3rd May 2026 · 11:00 AM onwards</div>
-            </div>
-          </div>
-          <div class="event-body">
-            <div class="event-desc">A sacred and joyous ritual where the maternal family showers the bride with love, blessings, and gifts — a tradition close to every heart.</div>
-            <div class="event-venue">📍 <span>Chawla Greens, seepat road, near RTO, Bilaspur</span></div>
-            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Chawla+Greens+seepat+road+near+RTO+Bilaspur+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
-          </div>
-        </div>
-
-        <!-- Baraat -->
-        <div class="event-card reveal">
-          <div class="event-header">
-            <div class="event-icon">🐴</div>
-            <div class="event-info">
-              <div class="event-name">Baraat</div>
-              <div class="event-datetime">Sunday, 3rd May 2026 · 6:00 PM onwards</div>
-            </div>
-          </div>
-          <div class="event-body">
-            <div class="event-desc">The grand groom's procession — a dazzling celebration of dhol, dance, and unbridled joy as Pramukh arrives to claim his beloved Vishnu Priya.</div>
-            <div class="event-venue">📍 <span>Chawla Greens, seepat road, near RTO, Bilaspur</span></div>
-            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Chawla+Greens+seepat+road+near+RTO+Bilaspur+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
+            <div class="event-desc">A sacred traditional pooja invoking divine blessings upon the couple, gracefully opening the wedding celebrations with prayer, warmth, and the joy of family.</div>
+            <div class="event-venue">📍 <span>Festiva Recreations, Kakolu Road, Rajanukunte, Yelahanka, Bengaluru</span></div>
+            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Festiva+Recreations+Kakolu+Road+Rajanukunte+Yelahanka+Bengaluru+562117" target="_blank">🗺️ <span>Get Directions</span></a>
           </div>
         </div>
 
@@ -825,29 +820,29 @@
             <div class="event-icon">🌟</div>
             <div class="event-info">
               <div class="event-name">Reception</div>
-              <div class="event-datetime">Sunday, 3rd May 2026 · 8:00 PM onwards</div>
+              <div class="event-datetime">Saturday, 4th July 2026 · 7:00 PM onwards</div>
             </div>
           </div>
           <div class="event-body">
-            <div class="event-desc">A grand evening of dinner, dance, and celebration — welcoming the newlyweds as they step into their beautiful new chapter together.</div>
-            <div class="event-venue">📍 <span>Chawla Greens, seepat road, near RTO, Bilaspur</span></div>
-            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Chawla+Greens+seepat+road+near+RTO+Bilaspur+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
+            <div class="event-desc">A grand evening of dinner, music, and celebration as families and friends gather to shower Pramukh & Vishnu Priya with love and blessings.</div>
+            <div class="event-venue">📍 <span>Festiva Recreations, Kakolu Road, Rajanukunte, Yelahanka, Bengaluru</span></div>
+            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Festiva+Recreations+Kakolu+Road+Rajanukunte+Yelahanka+Bengaluru+562117" target="_blank">🗺️ <span>Get Directions</span></a>
           </div>
         </div>
 
-        <!-- Phera -->
+        <!-- Muhurtham -->
         <div class="event-card reveal">
           <div class="event-header">
             <div class="event-icon">🔥</div>
             <div class="event-info">
-              <div class="event-name">Phera</div>
-              <div class="event-datetime">Sunday, 3rd May 2026 · Shubh Muhurat · 11:00 PM</div>
+              <div class="event-name">Muhurtham</div>
+              <div class="event-datetime">Sunday, 5th July 2026 · 08:00 AM to 08:45 AM</div>
             </div>
           </div>
           <div class="event-body">
-            <div class="event-desc">The most sacred moment — as Vishnu Priya and Pramukh take their seven holy vows around the sacred fire, uniting their souls in the eternal bond of marriage, witnessed by family, stars, and the divine.</div>
-            <div class="event-venue">📍 <span>Chawla Greens, seepat road, near RTO, Bilaspur</span></div>
-            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Chawla+Greens+seepat+road+near+RTO+Bilaspur+Chhattisgarh" target="_blank">🗺️ <span>Get Directions</span></a>
+            <div class="event-desc">The most sacred moment — as Pramukh and Vishnu Priya unite in the eternal bond of marriage at the auspicious muhurtham, witnessed by family, elders, and the divine. <em>Lagna: Kulira · Nija Jyeshta Panchami.</em></div>
+            <div class="event-venue">📍 <span>Festiva Recreations, Kakolu Road, Rajanukunte, Yelahanka, Bengaluru</span></div>
+            <a class="map-btn" onclick="event.stopPropagation()" href="https://maps.google.com/?q=Festiva+Recreations+Kakolu+Road+Rajanukunte+Yelahanka+Bengaluru+562117" target="_blank">🗺️ <span>Get Directions</span></a>
           </div>
         </div>
 
@@ -856,8 +851,9 @@
       <section class="rsvp-section">
         <div class="rsvp-inner">
           <h3>RSVP</h3>
-          <p>Kindly confirm your gracious presence by 25th April</p>
-          <a href="https://wa.me/917008805825?text=Namaste!%20I%20would%20like%20to%20confirm%20my%20RSVP%20for%20Vishnu%20Priya%20%26%20Pramukh%27s%20wedding.%20%F0%9F%92%8D%0AMy%20Name%3A%20%0AAttending%3A%20Yes%20%2F%20No%0ANumber%20of%20Guests%3A" class="rsvp-btn" target="_blank">Respond with Love</a>
+          <p>Kindly confirm your gracious presence by 30th June</p>
+          <a href="https://wa.me/918050892175?text=Namaste!%20I%20would%20like%20to%20confirm%20my%20RSVP%20for%20Pramukh%20%26%20Vishnu%20Priya%27s%20wedding.%20%F0%9F%92%8D%0AMy%20Name%3A%20%0AAttending%3A%20Yes%20%2F%20No%0ANumber%20of%20Guests%3A" class="rsvp-btn" target="_blank">Respond with Love</a>
+          <p class="gifts-note">🙏 Gifts in the form of blessings only</p>
         </div>
       </section>
 
@@ -958,7 +954,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const minutesEl = document.getElementById("minutes");
   const secondsEl = document.getElementById("seconds");
 
-  const weddingDate = new Date("2026-05-03T11:30:00").getTime();
+  const weddingDate = new Date("2026-07-05T08:00:00").getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
@@ -1039,4 +1035,5 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 </body>
 </html>
+
 
